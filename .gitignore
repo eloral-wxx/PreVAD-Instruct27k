@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environments and cache
+.venv/
+venv/
+env/
+conda/
+*.egg-info/
+.ipynb_checkpoints/
+.codex/
+.agents/
+
+# Model / dataset artifacts
+huggingface_hub/
+weights/
+checkpoints/
+outputs/
+logs/
+wandb/
+external/
+dataset-engine.pdf
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
