@@ -1,8 +1,33 @@
-# PreVAD-Instruct27k
+<h1 align="center">
+Enhancing Video Anomaly Understanding<br>
+via Multi-Task Instruction Tuning
+</h1>
 
-Official codebase for the paper **Enhancing Video Anomaly Understanding via Multi-Task Instruction Tuning**.
+<p align="center">
+  <a href="https://github.com/eloral-wxx">Xuxu Wang</a>,
+  Xiaoyu Wu,
+  Zihao Liu
+</p>
 
-![Framework Overview](assets/paper-overview.png)
+<p align="center">
+  Communication University of China
+</p>
+
+<p align="center">
+  <a href="https://ieeexplore.ieee.org/document/11230620/references">
+    <img src="https://img.shields.io/badge/Paper-IEEE-red.svg">
+  </a>
+  <a href="https://huggingface.co/datasets/eloral-wxx/PreVAD-Instruct27k">
+    <img src="https://img.shields.io/badge/Dataset-HuggingFace-yellow.svg">
+  </a>
+  <a href="https://github.com/eloral-wxx/PreVAD-Instruct27k">
+    <img src="https://img.shields.io/badge/Code-GitHub-black.svg">
+  </a>
+</p>
+
+<p align="center">
+  <img src="assets/paper-overview.png" width="95%">
+</p>
 
 Overview of the dataset construction and multi-task instruction-tuning pipeline used in this project.
 
@@ -12,10 +37,6 @@ This repository contains:
 - training code for Video-LLaVA-based instruction tuning
 - inference scripts for abnormal description, question answering, and multi-dataset classification
 - evaluation scripts for UniEval, BLEURT, and MoverScore
-
-## Status
-
-This repository is a research code release. The core training, inference, and metric scripts are included, and the main public-release cleanup has been started with repository-relative dataset paths, dataset preparation notes, and local artifact exclusions.
 
 ## Repository Structure
 
@@ -81,6 +102,7 @@ You should prepare:
 - required pretrained model weights from Hugging Face or upstream project repositories
 
 
+
 ### Public dataset sources
 
 For the public benchmarks used in this project, download the original videos from the official pages:
@@ -88,8 +110,6 @@ For the public benchmarks used in this project, download the original videos fro
 - `UCF-Crime`: UCF CRCV project page
 - `XD-Violence`: XD-Violence project page
 - `MSAD`: MSAD dataset page
-
-See [DATA_PREPARATION.md](/data/wxx/毕设/PreVAD-Instruct27k/DATA_PREPARATION.md) for recommended download links and local directory layout.
 
 ### Recommended local layout
 
@@ -202,13 +222,12 @@ If you use this repository, please cite:
 ```bibtex
 @article{prevad_instruct27k,
   title={Enhancing Video Anomaly Understanding via Multi-Task Instruction Tuning},
-  author={Your Name and Coauthors},
-  journal={arXiv preprint},
-  year={2026}
+  author={Wang, Xuxu and Wu, Xiaoyu and Liu, Zihao},
+  journal={IEEE Signal Processing Letters},
+  year={2025},
+  doi={10.1109/LSP.2025.3630089}
 }
 ```
-
-Please replace the placeholder citation with the final bibliographic information.
 
 ## Contact
 
