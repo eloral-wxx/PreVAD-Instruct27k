@@ -80,12 +80,6 @@ You should prepare:
 - evaluation videos for `UCF-Crime`, `XD-Violence`, and `MSAD`
 - required pretrained model weights from Hugging Face or upstream project repositories
 
-### Important
-
-Some scripts still assume local dataset or cache layouts. Before public release or cross-machine usage, check and adapt:
-
-- local cache paths such as `huggingface_hub`
-- task-specific checkpoint paths in inference scripts
 
 ### Public dataset sources
 
@@ -200,39 +194,6 @@ Model outputs can be organized under:
 ```text
 metrics/model-answers/
 ```
-
-## Public Release Checklist
-
-Before pushing this repository to a public GitHub page, I recommend the following:
-
-1. Remove or parameterize all absolute local paths.
-2. Ensure no private checkpoints, cached model files, or large raw videos are tracked.
-3. Add a dataset/license section clarifying what is redistributed and what must be obtained separately.
-4. Add exact training and inference commands for the main results in the paper.
-5. Add a `requirements` or tested environment note if you want non-Conda users to reproduce the setup.
-6. Add result tables matching the paper.
-7. Add citation information.
-
-## What Should Not Be Uploaded
-
-Do not upload:
-
-- Hugging Face cache directories
-- local conda environments
-- `wandb/` logs
-- large checkpoints unless you explicitly want to host them
-- raw videos if redistribution rights are unclear
-
-The included `.gitignore` already excludes common local artifacts.
-
-## Known Cleanup Items
-
-At the current state of this repository, there are still some portability issues to fix gradually:
-
-- many inference scripts still hardcode local cache or checkpoint locations
-- script naming and directory naming are not yet fully standardized
-
-These do not necessarily leak API secrets, but they do expose local environment details and reduce reproducibility.
 
 ## Citation
 
